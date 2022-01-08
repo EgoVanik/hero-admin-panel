@@ -14,7 +14,8 @@ export const fetchHeroes = createAsyncThunk(
     'heroes/fetchHeroes',
     () => {
         const {request} = useHttp();
-        return request("http://localhost:3001/heroes");
+        // return request("http://localhost:3001/heroes");
+        return request("https://hero-panel.herokuapp.com/heroes");
     }
 );
 
