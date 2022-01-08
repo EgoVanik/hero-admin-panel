@@ -12,8 +12,8 @@ export const fetchFilters = createAsyncThunk(
     'filters/fetchFilters',
     async () => {
         const {request} = useHttp();
-        // return await request("http://localhost:3001/filters");
-        return await request("https://hero-panel.herokuapp.com/filters");
+        return await request("http://localhost:3001/filters");
+        // return await request("https://hero-panel.herokuapp.com/filters");
     }
 );
 

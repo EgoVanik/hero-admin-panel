@@ -19,9 +19,6 @@ const HeroesAddForm = () => {
 
     const onSubmitHandler = (e) => {
         e.preventDefault();
-        // Можно сделать и одинаковые названия состояний,
-        // хотел показать вам чуть нагляднее
-        // Генерация id через библиотеку
         const newHero = {
             id: uuidv4(),
             name: heroName,
