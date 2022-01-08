@@ -1,4 +1,5 @@
-import heroImg from '../../assets/unknown-hero.jpeg'
+import heroImg from '../../assets/unknown-hero.jpeg';
+
 const HeroesListItem = ({name, description, element, onDelete}) => {
 
     let elementClassName;

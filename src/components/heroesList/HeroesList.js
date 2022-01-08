@@ -22,7 +22,8 @@ const HeroesList = () => {
 
     const onDelete = useCallback((id) => {
         // Удаление персонажа по его id
-        request(`http://localhost:3001/heroes/${id}`, "DELETE")
+        // request(`http://localhost:3001/heroes/${id}`, "DELETE")
+        request(`https://hero-panel.herokuapp.com/heroes/${id}`, "DELETE")
             .then(data => console.log(data, `Deleted id: ${id}`))
             .then(dispatch(heroDeleted(id)))
             .catch(err => console.log(err));
