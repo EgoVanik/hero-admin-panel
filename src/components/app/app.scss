@@ -14,3 +14,37 @@
         padding-left: 40px;
     }
 }
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+   
+    100% {
+        opacity: 1;
+    }
+  }
+
+.rounded-pill{
+    opacity: 0;
+}
+
+.card{
+    &:hover{
+        .rounded-pill{
+            animation: .4s cubic-bezier(.25, .25, .25, 1.25) forwards fade;
+            opacity: 1;
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 786px) {
+    .content{
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-gap: 2vw;
+        max-width: 100%;
+    }
+    .content__interactive{
+        padding-left: 0;
+    }
+}

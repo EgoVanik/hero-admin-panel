@@ -11,26 +11,3 @@
 ul {
     padding: 0;
 }
-
-@keyframes fade {
-    0% {
-        opacity: 0;
-    }
-   
-    100% {
-        opacity: 1;
-    }
-  }
-
-.rounded-pill{
-    opacity: 0;
-}
-
-.card{
-    &:hover{
-        .rounded-pill{
-            animation: .4s cubic-bezier(.25, .25, .25, 1.25) forwards fade;
-            opacity: 1;
-        }
-    }
-}
