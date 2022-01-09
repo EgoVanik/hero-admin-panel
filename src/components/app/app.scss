@@ -40,11 +40,17 @@
 
 @media (min-width: 320px) and (max-width: 786px) {
     .content{
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         grid-gap: 2vw;
         max-width: 100%;
     }
     .content__interactive{
         padding-left: 0;
+    }
+    .start-100{
+        left: 94.5% !important;
+    }
+    .top-0{
+        top: 20px !important;
     }
 }
